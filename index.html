@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/nav.css">
+  <link rel="stylesheet" href="assets/css/section.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+
+  <link rel="import" href="sections/registro.html">
+  <link rel="import" href="sections/consulta.html">
+
+  <title>Hello World!</title>
+</head>
+
+<body>
+  <div class="nav js-nav">
+    <header class="nav-header">
+      <h1 class="nav-title">FIME System Flow</h1>
+    </header>
+
+    <div class="nav-item u-category-windows">
+      <button type="button" id="button-registro" data-section="registro" class="nav-button">Registrar horas</button>
+      <button type="button" id="button-consulta" data-section="consulta" class="nav-button">Consultar horas</button>
+    </div>
+  </div>
+
+  <main class="content js-content"></main>
+
+  <script src="assets/import.js"></script>
+  <script src="assets/nav.js"></script>
+  <script src="assets/numpad.js"></script>
+</body>
+
+</html>

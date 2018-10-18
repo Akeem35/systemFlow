@@ -1,3 +1,4 @@
+
 document.body.addEventListener('click', (event) => {
   if (event.target.dataset.section) {
     handleSectionTrigger(event)
@@ -29,10 +30,6 @@ function handleModalTrigger (event) {
   document.getElementById(modalId).classList.add('is-shown')
 }
 
-function activateDefaultSection () {
-  document.getElementById('button-registro').click()
-}
-
 function showMainContent () {
   document.querySelector('.js-nav').classList.add('is-shown')
   document.querySelector('.js-content').classList.add('is-shown')
@@ -61,3 +58,5 @@ function hideAllSectionsAndDeselectButtons () {
 function displayAbout () {
   document.querySelector('#about-modal').classList.add('is-shown')
 }
+
+document.getElementById('button-registro').click()

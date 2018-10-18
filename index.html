@@ -4,12 +4,11 @@
 <head>
   <meta charset="UTF-8">
 
-  <link rel="stylesheet" href="assets/css/style.css">
-
   <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/nav.css">
   <link rel="stylesheet" href="assets/css/section.css">
   <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
 
   <link rel="import" href="sections/registro.html">
   <link rel="import" href="sections/consulta.html">
@@ -18,22 +17,35 @@
 </head>
 
 <body>
-  <div class="nav js-nav">
-    <header class="nav-header">
-      <h1 class="nav-title">FIME System Flow</h1>
-    </header>
-
-    <div class="nav-item u-category-windows">
-      <button type="button" id="button-registro" data-section="registro" class="nav-button">Registrar horas</button>
-      <button type="button" id="button-consulta" data-section="consulta" class="nav-button">Consultar horas</button>
-    </div>
+  <div class="topnav-container">
+    <button type="button" id="close-button" class="topnav-btn window-option"><i class="fas fa-times"></i></button>
+    <button type="button" id="maximize-button" class="topnav-btn window-option"><i class="far fa-window-maximize"></i></button>
+    <button type="button" id="minimize-button" class="topnav-btn window-option"><i class="far fa-window-minimize"></i></button>
   </div>
 
-  <main class="content js-content"></main>
+  <div class="main-container">
+    <div class="content-container">
+      <div class="nav js-nav">
+        <header class="nav-header">
+          <h1 class="nav-title">FIME System Flow</h1>
+        </header>
+
+        <div class="nav-item u-category-windows">
+          <button type="button" id="button-registro" data-section="registro" class="nav-button">Registrar horas</button>
+          <button type="button" id="button-consulta" data-section="consulta" class="nav-button">Consultar horas</button>
+
+        </div>
+      </div>
+
+      <main class="content js-content content-div"></main>
+
+    </div>
+
+  </div>
 
   <script src="assets/import.js"></script>
   <script src="assets/nav.js"></script>
-  <script src="assets/numpad.js"></script>
+  <script src="assets/test.js"></script>
 </body>
 
 </html>

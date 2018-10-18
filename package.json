@@ -16,5 +16,9 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^2.0.10"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.4.1",
+    "electron-reload": "^1.2.5"
   }
 }
